@@ -1,5 +1,7 @@
 # FDE Prep Journal
 
+[https://nitinkc.github.io/forward-deployed-engineer-gcp/](https://nitinkc.github.io/forward-deployed-engineer-gcp/)
+
 A MkDocs site for tracking Google Cloud Forward Deployed Engineer (FDE) interview
 and career preparation — daily/weekly learning log, skill matrix, project work,
 and interview prep, all versioned in Git.

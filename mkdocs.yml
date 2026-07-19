@@ -1,6 +1,6 @@
 site_name: FDE Prep Journal
 site_description: Google Cloud Forward Deployed Engineer interview & career prep log
-repo_url: https://github.com/YOUR_USERNAME/fde-journal
+repo_url: https://nitinkc.github.io/forward-deployed-engineer-gcp/
 theme:
   name: material
   palette:
