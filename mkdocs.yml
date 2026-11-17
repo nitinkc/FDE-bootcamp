@@ -63,4 +63,5 @@ nav:
       - Mock Interviews: interview-prep/mock-interviews.md
       - Behavioral Stories (STAR): interview-prep/behavioral-stories.md
       - System Design Drills: interview-prep/system-design-drills.md
+      - interview: interview-prep/inter.md
   - Resources: resources/resources.md
