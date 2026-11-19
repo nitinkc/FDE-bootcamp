@@ -7,7 +7,7 @@ without waiting on a human expert.)
 
 ## Why this project
 
-Leverages existing healthcare domain background (DaVita Kidney Care experience) to produce
+Leverages existing healthcare domain background to produce
 a credible, differentiated interview narrative — not a generic tutorial clone.
 
 ## Scope (v1)

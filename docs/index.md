@@ -1,7 +1,7 @@
 # FDE Prep Journal
 
-Tracking my preparation for a Google Cloud Forward Deployed Engineer (FDE) role —
-specialization: Generative AI, Agentic Systems, Vertex AI, Enterprise AI Deployments.
+Tracking my preparation for a Forward Deployed Engineer (FDE) role —
+specialization: Generative AI, Agentic Systems, Cloud AI Platforms, Enterprise AI Deployments.
 
 **Started:** 2026-07-18
 **Weekly time budget:** 12–15 hrs (4x 90-min deep work sessions + weekend project blocks)
@@ -10,16 +10,11 @@ specialization: Generative AI, Agentic Systems, Vertex AI, Enterprise AI Deploym
 
 ## How this site is organized
 
-- **Progress** — the live readiness dashboard and skill matrix. Update weekly.
-- **Weekly Journal** — one page per week. This is the daily discipline log.
-- **Roadmap Phases** — the 6-phase long-term plan. Static reference, check off as completed.
+- **Roadmap Phases** — the 6-phase long-term plan. Each phase is a self-contained learn + self-interview doc: master the checklist, then test yourself with the interview questions and phase gate. Phase 6 is the master self-interview hub.
 - **Project: Healthcare RAG Platform** — the main build. Architecture, decisions, changelog.
-- **Topic Notes** — evergreen reference notes per subject, built up over time (not tied to a date).
-- **Interview Prep** — mock interview logs, behavioral stories, system design drill reps.
+- **Interview Prep** — prep plan and behavioral stories (STAR). Each roadmap phase also embeds an interview deep dive.
 
 ## Current Status
-
-See [Readiness Dashboard](progress/readiness-dashboard.md) for the live numbers.
 
 | Metric | Value |
 |---|---|

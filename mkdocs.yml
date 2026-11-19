@@ -1,67 +1,65 @@
 site_name: FDE Prep Journal
-site_description: Google Cloud Forward Deployed Engineer interview & career prep log
+site_description: Forward Deployed Engineer interview & career prep log
 repo_url: https://nitinkc.github.io/forward-deployed-engineer-gcp/
 theme:
-  name: material
-  palette:
-    - scheme: default
-      primary: cyan
-      accent: red
-      toggle:
-        icon: material/lightbulb-outline
-        name: Switch to dark mode
-    - scheme: slate
-      primary: amber
-      accent: red
-      toggle:
-        icon: material/lightbulb
-        name: Switch to light mode
-  features:
-    - navigation.tabs
-    - navigation.sections
-    - navigation.expand
-    - toc.integrate
-    - search.suggest
+    name: material
+    palette:
+        - scheme: default
+          primary: cyan
+          accent: red
+          toggle:
+              icon: material/lightbulb-outline
+              name: Switch to dark mode
+        - scheme: slate
+          primary: amber
+          accent: red
+          toggle:
+              icon: material/lightbulb
+              name: Switch to light mode
+    features:
+        # Navigation
+        - navigation.tabs
+        - navigation.tabs.sticky
+        - navigation.sections
+        - navigation.expand
+        - navigation.path
+        - navigation.top # Back-to-top button
+        - navigation.footer # Prev/Next page links
+        # navigation.instant disabled — breaks live reload (re-enable for production builds)
+        # - navigation.instant
+        # - navigation.instant.progress
+        # Search
+        - search.suggest
+        - search.highlight
+        - search.share
+        # Content
+        - content.code.copy
+        - content.code.annotate # (1) style code annotations
+        - content.tabs.link # Sync tabs across page
+        - content.tooltips
 
 markdown_extensions:
-  - admonition
-  - tables
-  - toc:
-      permalink: true
-  - pymdownx.highlight
-  - pymdownx.superfences
-  - pymdownx.tasklist:
-      custom_checkbox: true
+    - admonition
+    - tables
+    - toc:
+          permalink: true
+    - pymdownx.highlight
+    - pymdownx.superfences
+    - pymdownx.tasklist:
+          custom_checkbox: true
 
 nav:
-  - Home: index.md
-  - Progress:
-      - Readiness Dashboard: progress/readiness-dashboard.md
-      - Skill Matrix: progress/skill-matrix.md
-  - Weekly Journal:
-      - 2026:
-          - Week 01: journal/2026/week-01.md
-  - Roadmap Phases:
-      - Phase 1 - Foundation: phases/phase-1-foundation.md
-      - Phase 2 - Applied AI Engineering: phases/phase-2-applied-ai.md
-      - Phase 3 - Agentic Systems: phases/phase-3-agentic-systems.md
-      - Phase 4 - Production AI Platforms: phases/phase-4-production-ai.md
-      - Phase 5 - FDE Excellence: phases/phase-5-fde-excellence.md
-      - Phase 6 - Interview Readiness: phases/phase-6-interview-readiness.md
-  - Project - Healthcare RAG Platform:
-      - Overview: projects/healthcare-rag-platform/overview.md
-      - Architecture: projects/healthcare-rag-platform/architecture.md
-      - Decisions Log: projects/healthcare-rag-platform/decisions.md
-      - Changelog: projects/healthcare-rag-platform/changelog.md
-  - Topic Notes:
-      - GCP: topics/gcp/index.md
-      - Vertex AI: topics/vertex-ai/index.md
-      - RAG & Embeddings: topics/rag/index.md
-      - Agentic Systems: topics/agentic-systems/index.md
-      - System Design: topics/system-design/index.md
-  - Interview Prep:
-      - Mock Interviews: interview-prep/mock-interviews.md
-      - Behavioral Stories (STAR): interview-prep/behavioral-stories.md
-      - System Design Drills: interview-prep/system-design-drills.md
-      - interview: interview-prep/inter.md
-  - Resources: resources/resources.md
+    - Home: index.md
+    - Roadmap Phases:
+          - Phase 1 - Foundation: phases/phase-1-foundation.md
+          - Phase 2 - Applied AI Engineering: phases/phase-2-applied-ai.md
+          - Phase 3 - Agentic Systems: phases/phase-3-agentic-systems.md
+          - Phase 4 - Production AI Platforms: phases/phase-4-production-ai.md
+          - Phase 5 - FDE Excellence: phases/phase-5-fde-excellence.md
+          - Phase 6 - Interview Readiness: phases/phase-6-interview-readiness.md
+    - Project - Healthcare RAG Platform:
+          - Overview: projects/healthcare-rag-platform/overview.md
+          - Architecture: projects/healthcare-rag-platform/architecture.md
+    - Interview Prep:
+          - Prep Plan: interview-prep/prep-plan.md
+          - Behavioral Stories (STAR): interview-prep/behavioral-stories.md
