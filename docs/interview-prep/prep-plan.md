@@ -24,9 +24,55 @@ Every question is decomposed into the **atomic concepts** a Level-5 answer requi
 
 ---
 
+### Software Engineering
+- [ ] Python for Production
+- [ ] Clean Code
+- [ ] Testing
+- [ ] Debugging
+
+### GCP
+- [ ] Core Services
+- [ ] Architecture Patterns
+- [ ] Networking
+- [ ] Security
+
+### AI Foundations
+- [ ] LLM Fundamentals
+- [ ] Prompt Engineering
+- [ ] Vertex AI Foundations
+- [ ] Gemini Ecosystem
+
+### Agentic Systems
+- [ ] LangGraph (secondary/comparative)
+- [ ] ADK (priority)
+- [ ] ReAct
+- [ ] Tool Use
+- [ ] Agent Planning
+- [ ] Multi-Agent Architectures
+- [ ] State Management
+
+### Production-Grade AI Platforms
+- [ ] Monitoring
+- [ ] Observability
+- [ ] Evaluation Pipelines
+- [ ] Tracing
+- [ ] Cost Optimization
+- [ ] Reliability
+- [ ] Security
+- [ ] Scalability
+
+### FDE Excellence
+- [ ] Discovery Sessions
+- [ ] Solution Workshops
+- [ ] Technical Leadership
+- [ ] Executive Communication
+- [ ] Customer Success
+- [ ] Architecture Reviews
+- [ ] Requirements Translation
+
 ## Section A — Production Engineering (25% weight)
 
-### Q: Notebook → production service *(§1.1, Phase 1)*
+### Q: Notebook → production service 
 
 - [ ] Modular project layout vs. notebook script — *signal: can you describe src/tests/entrypoint separation in 30s?*
 - [ ] API contract design — typed request/response schemas (Pydantic), versioning
@@ -38,7 +84,7 @@ Every question is decomposed into the **atomic concepts** a Level-5 answer requi
 - [ ] Handoff readiness *(probe)* — README/runbook, typed interfaces, tests as docs. *Signal: describe a real 24h onboarding cold.*
 - [ ] Debugging a prod bug you can't repro *(Phase 1 SWE Q4)* — logs/traces first, bisect deploys/config, staging repro, fix + regression test
 
-### Q: Ingestion pipeline across messy legacy systems *(§1.2, Phase 6 SD drill)*
+### Q: Ingestion pipeline across messy legacy systems 
 
 - [ ] Validation at the boundary — schema contracts, rejecting/quarantining bad records early
 - [ ] Idempotency — dedup keys, upserts, why re-runs must not double-write
@@ -48,7 +94,7 @@ Every question is decomposed into the **atomic concepts** a Level-5 answer requi
 - [ ] Crash-mid-batch guarantee *(probe)* — checkpoint/watermark resume, transactional batch boundaries, dedup on re-run. *Signal: state the exact mechanism, not "it's idempotent".*
 - [ ] Partial failure + alerting — batch statuses, structured alerts
 
-### Q: Slowed-down ETL job diagnosis *(§2.2, Phase 4)*
+### Q: Slowed-down ETL job diagnosis
 
 - [ ] Execution plan / DAG reading — where stage time goes
 - [ ] Data skew — stragglers, null-key joins, high-cardinality hot keys
@@ -68,9 +114,9 @@ Every question is decomposed into the **atomic concepts** a Level-5 answer requi
 
 ---
 
-## Section B — Data Modeling & Compute (20% weight)
+## Section B — Data Modeling & Compute
 
-### Q: Operational entity model (orgs/facilities/equipment/tasks) *(§2.1, Phase 6 SD drill)*
+### Q: Operational entity model (orgs/facilities/equipment/tasks)
 
 - [ ] Mutable state vs. immutable event log — current view + audit history separation
 - [ ] Cardinality handling — many-to-many staff↔facility join tables
@@ -79,7 +125,7 @@ Every question is decomposed into the **atomic concepts** a Level-5 answer requi
 - [ ] Query-pattern-driven design — denormalize for hot reads, avoid distributed joins on UI paths
 - [ ] Indexing strategy — what you'd index and why
 
-### Q: Two-way writeback console *(§4.1, Phase 4 + SD drill)*
+### Q: Two-way writeback console 
 
 - [ ] Concurrency control — optimistic locking (version stamps, ETags) vs. leases/reservations
 - [ ] Idempotent write APIs — safe retries, dedupe request IDs
@@ -90,9 +136,9 @@ Every question is decomposed into the **atomic concepts** a Level-5 answer requi
 
 ---
 
-## Section C — Applied AI, RAG & Agents (15% weight)
+## Section C — Applied AI, RAG & Agents 
 
-### Q: Enterprise assistant over policy docs *(§3.1, Phase 2)*
+### Q: Enterprise assistant over policy docs 
 
 - [ ] Hybrid search — BM25 + dense vectors; when each wins; fusion (RRF, weighted)
 - [ ] Chunking — structure-aware, parent-child; failure modes of too-small vs. too-large
@@ -102,29 +148,29 @@ Every question is decomposed into the **atomic concepts** a Level-5 answer requi
 - [ ] Doc versioning *(probe)* — superseded policies → versioned metadata, atomic re-index/swap, no stale-answer window
 - [ ] Sloppy queries — query rewriting, expansion, multi-query retrieval, synonyms
 
-### Q: Vector store choice on GCP *(Phase 2)*
+### Q: Vector store choice on GCP 
 
 - [ ] Vertex AI Vector Search vs. pgvector vs. BigQuery vector — scale/latency/filtering/ops trade-offs *(probably H — pick one and use it)*
 
-### Q: RAG evaluation *(Phase 2)*
+### Q: RAG evaluation
 
 - [ ] Golden eval set from real queries — not synthetic-only
 - [ ] Metrics — retrieval recall@k, faithfulness, answer relevance; LLM-as-judge limits
 - [ ] Regression gating — eval runs on every prompt/index/model change
 
-### Q: Enterprise vs. academic metrics *(§3.2)*
+### Q: Enterprise vs. academic metrics 
 
 - [ ] Business KPIs — task time, SLA breaches, $ saved, error rates in real usage
 - [ ] HITL telemetry — override rate, copy-paste, thumbs feedback, adoption curves
 
-### Q: Guardrails *(Phase 2)*
+### Q: Guardrails
 
 - [ ] PII detection/masking on input + output
 - [ ] Prompt-injection defenses — instruction hierarchy, tool-output distrust
 - [ ] Output validation — schema enforcement, groundedness checks
 - [ ] Abuse controls — rate limits, safe defaults on failure
 
-### Q: Agentic systems *(Phase 3)*
+### Q: Agentic systems 
 
 - [ ] ReAct loop — when reasoning+acting beats one call; when it's overkill (cost/latency/reliability)
 - [ ] Tool design — typed schemas, arg validation, error text fed back to model, retry vs. escalate
@@ -135,7 +181,7 @@ Every question is decomposed into the **atomic concepts** a Level-5 answer requi
 - [ ] State & memory — checkpointing, session memory, summarization, idempotent crash-resume
 - [ ] Agent testing — trajectory evals, tool-call assertions, trace replay, scenario sets (not "ran it, looked right")
 
-### Q: Vertex/Gemini fluency *(Phase 1)*
+### Q: Vertex/Gemini fluency 
 
 - [ ] Tokens/context/temperature — explain to non-ML audience with practical consequences
 - [ ] Inconsistent output levers, in order — system instructions → few-shot → JSON schema/structured output → temperature → model/fine-tune last
@@ -146,7 +192,7 @@ Every question is decomposed into the **atomic concepts** a Level-5 answer requi
 
 ## Section D — Production AI Operations (feeds Production pillar)
 
-### Q: LLM latency / anomaly incidents *(Phase 4, §6.2)*
+### Q: LLM latency / anomaly incidents 
 
 - [ ] p95 triage — split model vs. retrieval vs. orchestration via traces; token counts, cold starts, quota
 - [ ] Fail-safes — circuit breakers, last-known-good cache, rule-based degrade path
@@ -157,7 +203,7 @@ Every question is decomposed into the **atomic concepts** a Level-5 answer requi
 - [ ] Cost reduction — measure breakdown → model routing, caching, prompt compaction, batching, verified by evals
 - [ ] Scaling 10→10k users — QPS/quota ceilings, index latency, cache layers, autoscaling, async eval
 
-### Q: Access control end-to-end *(§6.1, Phase 4)*
+### Q: Access control end-to-end
 
 - [ ] RBAC/ABAC enforced at data + API layers, not just UI
 - [ ] Row-level security, masking/tokenization of sensitive fields
@@ -167,9 +213,9 @@ Every question is decomposed into the **atomic concepts** a Level-5 answer requi
 
 ---
 
-## Section E — Stakeholder, Scoping & Behavioral (40% combined weight)
+## Section E — Stakeholder, Scoping & Behavioral
 
-### Q: Discovery sessions *(§5.1, Phase 5)*
+### Q: Discovery sessions
 
 - [ ] "Ask why" before architecture — resist solutioning
 - [ ] Shadowing — map the real manual process (chat handoffs, Excel trackers)
@@ -178,36 +224,36 @@ Every question is decomposed into the **atomic concepts** a Level-5 answer requi
 - [ ] "No AI needed" probe — ship the filtered priority list, say so plainly
 - [ ] Requirements → architecture — identify the real decisions users make, measurable success metric, phased scope, explicit assumptions
 
-### Q: Communication *(§5.2, §1.3 probe, Phase 5)*
+### Q: Communication 
 
 - [ ] Latency/cost/accuracy to a non-engineer — analogies, money/time/risk, zero acronyms
 - [ ] Pushing back on a "sexier" solution — anchor on their goals, concrete comparison, no condescension
 - [ ] Architecture review facilitation — options-with-trade-offs framing, listen before defending, action items + owners
 - [ ] 60-second exec value answer — business metrics first, honest about limits
 
-### Q: Validation UX under time pressure *(§4.2, Phase 5)*
+### Q: Validation UX under time pressure
 
 - [ ] Tiered validation — instant client-side format checks + authoritative server-side rules
 - [ ] Selective friction — confirmations only for irreversible actions; warnings for low-risk
 - [ ] Draft state, undo, human-readable errors
 - [ ] Alert-fatigue failure mode — why hard stops push users back to spreadsheets
 
-### Behavioral bank *(§7, Phase 5–6)* — one STAR each:
+### Behavioral bank — one STAR each:
 
-- [ ] 80%-in-2-weeks ship *(§7.1)* — what you compromised, how you disclosed limits
-- [ ] Tool users rejected *(§7.2)* — humility, friction curiosity, modified/discarded code
-- [ ] Something you owned broke *(§7.3)* — "I owned it, validation failed here, fixed thus"
+- [ ] 80%-in-2-weeks ship — what you compromised, how you disclosed limits
+- [ ] Tool users rejected — humility, friction curiosity, modified/discarded code
+- [ ] Something you owned broke— "I owned it, validation failed here, fixed thus"
 - [ ] Ambiguity navigation, conflict, customer obsession, technical leadership, failure+learning — fill the bank to 6–10 stories
 
 ---
 
 ## Section F — Synthesis Drills (prove the pillars compose)
 
-- [ ] **FDE whiteboard (§8, Phase 6)** — 15-min: ingestion gates → entity model → interactive UI → transactional writeback → governance. Level 3 = full lifecycle + you asked about latency/user constraints.
-- [ ] Task-assignment service design *(§2.1 applied)*
-- [ ] 50k-doc RAG w/ citations + abstention *(§3.1 applied)*
+- [ ] **FDE whiteboard ** — 15-min: ingestion gates → entity model → interactive UI → transactional writeback → governance. Level 3 = full lifecycle + you asked about latency/user constraints.
+- [ ] Task-assignment service design 
+- [ ] 50k-doc RAG w/ citations + abstention 
 - [ ] Multi-agent ticket triage — and justify agents vs. simple pipeline
-- [ ] Eval + observability layer for an LLM platform *(§6.2 applied)*
+- [ ] Eval + observability layer for an LLM platform 
 - [ ] RAG platform on GCP from memory — every service justified
 - [ ] "Isolated to customer VPC, no public egress" — private endpoints, PSC, VPC-SC *(likely K — check your GCP networking depth)*
 - [ ] "5 nines on the read path" — what you'd actually promise, where the real risk is
@@ -227,3 +273,19 @@ Every question is decomposed into the **atomic concepts** a Level-5 answer requi
 Weekly: pick the highest-weight ❌ → get the concept explained → rep it out loud
 → log it
 → re-score anything ≤3 the next week.
+
+
+# Behavioral Stories (STAR)
+
+Build a bank of 6-10 stories from real experience (current & prior roles) covering:
+ownership, ambiguity, conflict, customer obsession, technical leadership, failure & learning.
+
+## Template
+
+### Story title — Competency: (e.g., Ownership)
+
+**Situation:** Voice IVRS - Maya, makes a call to patient and takes feedback
+**Task:**
+**Action:**
+**Result:**
+**Why this shows [competency]:**

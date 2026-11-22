@@ -1,21 +1,7 @@
 # Phase 3 — Agentic Systems
 
 **Goal:** Build sophisticated agent workflows similar to those expected in modern enterprise AI deployments.
-
-## Master
-- [ ] LangGraph (secondary/comparative)
-- [ ] ADK (priority)
-- [ ] ReAct
-- [ ] Tool Use
-- [ ] Agent Planning
-- [ ] Multi-Agent Architectures
-- [ ] State Management
-
-## Self-Interview Check
-
-Ask each question **cold and out loud** (~2–3 min each). Score honestly:
-**1** = couldn't answer · **3** = partial / hand-wavy · **5** = crisp with production depth.
-Cross-references like §5.1 point to deep dives in the other phase docs.
+- [ ] First ADK agent running.
 
 ### Core Patterns
 
@@ -41,12 +27,5 @@ Cross-references like §5.1 point to deep dives in the other phase docs.
    - Strong answer: checkpointing/persisted state, session memory, summarization for long contexts, idempotent resumption.
 2. **"How do you test and evaluate a non-deterministic agentic workflow?"**
    - Strong answer: trajectory evals, assertions on tool calls and outcomes, trace replay, scenario eval sets — not just "ran it and looked right".
-3. **"An ops director says: 'build me an AI agent to fix our task handoffs.' What do you verify before writing any agent code?"** *(see Phase 5, §5.1)*
+3. **"An ops director says: 'build me an AI agent to fix our task handoffs.' What do you verify before writing any agent code?"** *(see Phase 5, 5.1)*
    - Strong answer: discovery first — the fix might be a filtered list, not an agent; only builds agentics after validating a multi-step reasoning need.
-
-### Phase Gate
-
-- [ ] Scored **4+ on ≥80%** of the questions above, out loud, without notes.
-- [ ] First ADK agent running.
-
-## Notes / Evidence

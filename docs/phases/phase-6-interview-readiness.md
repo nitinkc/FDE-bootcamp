@@ -86,8 +86,8 @@ Work the Self-Interview Check in each phase — those are the core knowledge que
 **Drill prompts** (15–20 min whiteboard each):
 
 1. Design a task-assignment service for field operators (entities, state transitions, audit).
-2. Design an ingestion pipeline across unreliable legacy sources — schema drift, retries, DLQs. *(§1.2)*
-3. Design an idempotent writeback API for an Approve/Reject console. *(§4.1)*
+2. Design an ingestion pipeline across unreliable legacy sources — schema drift, retries, DLQs. *(1.2)*
+3. Design an idempotent writeback API for an Approve/Reject console. *(4.1)*
 
 ## AI System Design
 
@@ -97,13 +97,13 @@ Work the Self-Interview Check in each phase — those are the core knowledge que
 
 **Drill prompts:**
 
-1. Design an enterprise assistant over 50k policy docs with citations and zero-hallucination fallbacks. *(§3.1)*
+1. Design an enterprise assistant over 50k policy docs with citations and zero-hallucination fallbacks. *(3.1)*
 2. Design a multi-agent workflow that triages ops tickets — justify why agents vs. a simple pipeline.
-3. Design the eval + observability layer for a production LLM platform. *(§6.2)*
+3. Design the eval + observability layer for a production LLM platform. *(6.2)*
 
 ## The FDE Whiteboard Scenario
 
-The signature drill (§8) — time yourself to **15 minutes**:
+The signature drill (8) — time yourself to **15 minutes**:
 
 > *1,000 branch offices log equipment maintenance, tasks, and supplies in
 > disconnected spreadsheets, causing stockouts and delayed maintenance.
@@ -176,16 +176,16 @@ Target shape:
 - [ ] Ambiguity Navigation
 
 Every competency needs a STAR story in the [story bank](../interview-prep/behavioral-stories.md),
-plus these FDE-specific prompts (§7 — deep dive in Phase 5):
+plus these FDE-specific prompts (7 — deep dive in Phase 5):
 
-- "A time you shipped an 80% solution in two weeks instead of perfecting it — what did you compromise?" *(§7.1)*
-- "A tool you built that users rejected — what did you do?" *(§7.2)*
-- "Something you owned went wrong — how did you communicate and fix it?" *(§7.3)*
+- "A time you shipped an 80% solution in two weeks instead of perfecting it — what did you compromise?" *(7.1)*
+- "A tool you built that users rejected — what did you do?" *(7.2)*
+- "Something you owned went wrong — how did you communicate and fix it?" *(7.3)*
 
 ## Self-Score Scorecard
 
 After a round of question banks + one whiteboard + behavioral, score each pillar
-1–5 and weight it — adapted from the interviewer's scorecard (§9):
+1–5 and weight it — adapted from the interviewer's scorecard (9):
 
 | Competency Pillar | Weight | You're a 5 when you… | Score (1–5) |
 | --- | --- | --- | --- |
@@ -204,7 +204,7 @@ After a round of question banks + one whiteboard + behavioral, score each pillar
 | 70–85% | Interview-capable — start timed full mocks |
 | 85%+ | Ready — schedule real interviews |
 
-### Interviewer Rubric (§9)
+### Interviewer Rubric (9)
 
 The full scoring grid an interviewer uses — same pillars, with what each level
 looks like:
@@ -217,18 +217,3 @@ looks like:
 | **Stakeholder & Scoping** | 20% | Dense technical jargon; expects polished specs before writing code | Communicates adequately; translates technical ideas if prompted; focuses on the tech, not the problem | Deeply empathetic; shadows users to find root bottlenecks; translates trade-offs into business risk |
 | **Accountability & GSD** | 20% | Perfectionist paralysis; blames teammates, bad data, or users when software fails | Iterates quickly but gets uncomfortable when requirements shift | Extreme ownership; comfortable shipping 80% MVPs to learn; humble, accountable, measures success by adoption |
 
-**Overall recommendation benchmarks:**
-
-- **Strong Hire** — full-stack data and systems literacy, operational empathy, rapid prototyping velocity, extreme accountability.
-- **Hire** — solid engineering foundations and problem-solving; needs light coaching on business negotiation or distributed data optimization.
-- **No Hire** — trapped in academic perfectionism; dismissive of operational realities; can't write testable, deployable code.
-
-## Full Mock Agenda (45 min, self-run or with a partner)
-
-- [ ] 5 min — "Tell me about yourself" + why FDE
-- [ ] 10 min — Discovery scenario: vague ops problem → run discovery live (§5.1, Phase 5)
-- [ ] 15 min — Whiteboard: the FDE scenario above
-- [ ] 10 min — Behavioral: two §7 prompts (Phase 5)
-- [ ] 5 min — Your questions for them
-
-## Notes / Evidence

@@ -46,10 +46,13 @@ markdown_extensions:
     - pymdownx.highlight
     - pymdownx.superfences
     - pymdownx.tasklist:
-          custom_checkbox: true
+          custom_checkbox: false
+          clickable_checkbox: true
 
 nav:
-    - Home: index.md
+    - Home:
+        - index: index.md
+        - plan: plan.md
     - Roadmap Phases:
           - Phase 1 - Foundation: phases/phase-1-foundation.md
           - Phase 2 - Applied AI Engineering: phases/phase-2-applied-ai.md
@@ -57,9 +60,21 @@ nav:
           - Phase 4 - Production AI Platforms: phases/phase-4-production-ai.md
           - Phase 5 - FDE Excellence: phases/phase-5-fde-excellence.md
           - Phase 6 - Interview Readiness: phases/phase-6-interview-readiness.md
-    - Project - Healthcare RAG Platform:
-          - Overview: projects/healthcare-rag-platform/overview.md
-          - Architecture: projects/healthcare-rag-platform/architecture.md
+    - Lessons:
+          - Overview: lessons/index.md
+          - 01 - Production Software Engineering: lessons/lesson-01-production-software-engineering.md
+          - 02 - Data Pipelines & Entity Modeling: lessons/lesson-02-data-pipelines-and-modeling.md
+          - 03 - Cloud Core: lessons/lesson-03-cloud-core.md
+          - 04 - LLM Foundations: lessons/lesson-04-llm-foundations.md
+          - 05 - RAG & Retrieval: lessons/lesson-05-rag-and-retrieval.md
+          - 06 - Vector Stores, Eval & Guardrails: lessons/lesson-06-vector-stores-eval-guardrails.md
+          - 07 - Agentic Systems: lessons/lesson-07-agentic-systems.md
+          - "08 - Production AI: Reliability & Observability": lessons/lesson-08-production-reliability-observability.md
+          - "09 - Production AI: Cost, Security & Scale": lessons/lesson-09-production-cost-security-scale.md
+          - 10 - FDE Excellence: lessons/lesson-10-fde-excellence.md
+          - 11 - Interview Readiness: lessons/lesson-11-interview-readiness.md
+    - Project:
+          - Overview: projects/overview.md
+          - Architecture: projects/architecture.md
     - Interview Prep:
           - Prep Plan: interview-prep/prep-plan.md
-          - Behavioral Stories (STAR): interview-prep/behavioral-stories.md
