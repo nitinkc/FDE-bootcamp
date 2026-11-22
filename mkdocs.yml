@@ -52,7 +52,6 @@ markdown_extensions:
 nav:
     - Home:
         - index: index.md
-        - plan: plan.md
     - Roadmap Phases:
           - Phase 1 - Foundation: phases/phase-1-foundation.md
           - Phase 2 - Applied AI Engineering: phases/phase-2-applied-ai.md
