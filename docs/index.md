@@ -136,6 +136,7 @@ environments under real-world constraints.
 
 ##### Enterprise Capstone Project & Production Gate
 Engineers pick one enterprise scenario and execute it across all 5 operational phases:
+
 * **Phase 1 – Discovery:** Client discovery, requirements matrix, business process mapping.
 * **Phase 2 – Solution Design:** Solution architecture, data flow diagrams, integration design, threat modeling.
 * **Phase 3 – Development:** Secure FastAPI backend, RAG pipeline, multi-agent systems, enterprise connectors.

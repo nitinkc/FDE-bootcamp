@@ -29,7 +29,7 @@ theme:
         - navigation.footer # Prev/Next page links
         # navigation.instant disabled — breaks live reload (re-enable for production builds)
         # - navigation.instant
-        # - navigation.instant.progress
+        - navigation.instant.progress
         # Search
         - search.suggest
         - search.highlight
