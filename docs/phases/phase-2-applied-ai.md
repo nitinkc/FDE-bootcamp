@@ -45,5 +45,3 @@
 - **Question:** "In academia, success is measured by benchmark metrics like accuracy, F1-score, or loss curves. In an enterprise role, how do you define and measure whether an automated workflow tool is actually successful and adding value to users?"
 - **Good signs:** connects system performance to business operational metrics — human task completion time, SLA breach reduction, dollar savings, error rates in active usage; establishes human-in-the-loop telemetry (user override rates, copy-paste activity, thumbs-up/down feedback loops).
 - **Red flags:** fixates solely on mathematical loss curves or validation metrics; does not consider whether users actually adopt the software.
-
-
